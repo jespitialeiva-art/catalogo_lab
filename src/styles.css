@@ -1,0 +1,42 @@
+/* Diseño sencillo y editable para el laboratorio */
+:root{font-family:Arial,Helvetica,sans-serif;color:#263238;background:#f5f6f8;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #2864aa;outline-offset:2px}.shell{max-width:1120px;margin:auto;padding:0 20px}.site-header{background:#fff;border-bottom:1px solid #ddd}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{border:0;background:none;color:#225c99;font-size:23px;font-weight:700}.nav-actions{display:flex;align-items:center;gap:18px;color:#555;font-size:14px}.nav-actions button,.favorites-shortcut,.reset-button,.detail-link{background:#fff;border:1px solid #cbd4df;color:#225c99;border-radius:6px;padding:9px 13px}.nav-actions button.active,.favorites-shortcut.selected{background:#e4eefb}.page-heading{margin:38px 0 26px}.page-heading h1{font-size:30px;margin:0 0 8px}.page-heading p{color:#65707b;margin:0}.search-section{background:#fff;padding:20px;border:1px solid #ddd;border-radius:8px}.search-wrap{display:flex;align-items:center;border:1px solid #cbd4df;border-radius:6px;padding:0 12px}.search-icon{font-size:24px;color:#777}.search-wrap input{flex:1;width:100%;padding:13px;border:0;outline:0;background:transparent}.clear-search{border:0;background:none;font-size:24px;color:#777}.filters-panel{margin-top:16px}.filter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.filter-grid label{display:grid;gap:6px;font-size:14px;font-weight:600}.filter-grid select{width:100%;border:1px solid #cbd4df;background:#fff;border-radius:5px;padding:10px;color:#333}.filter-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:17px}.favorite-checkbox{font-size:14px}.favorite-checkbox input{accent-color:#225c99}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:34px}.section-heading h2{font-size:22px;margin:0}.shortcut-count{font-weight:bold}.results-heading{color:#697480;font-size:14px;margin:13px 0 19px}.movie-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding-bottom:40px}.movie-card{background:#fff;border:1px solid #e0e3e8;border-radius:8px;overflow:hidden;display:flex;flex-direction:column}.poster-container{height:270px;position:relative;background:#e1e4e9}.poster-click{border:0;width:100%;height:100%;padding:0;background:transparent}.poster-click img{height:100%;width:100%;object-fit:cover}.poster-placeholder{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;height:100%;padding:20px;text-align:center;color:#445}.poster-placeholder small{font-size:15px}.rating-badge{position:absolute;left:10px;top:10px;background:#fff;padding:5px 8px;border-radius:5px;font-size:13px}.heart-button{position:absolute;right:10px;top:9px;width:34px;height:34px;border:0;border-radius:50%;background:#fff;color:#6a7380;font-size:22px}.heart-button.liked{color:#cf3b55}.movie-info{padding:15px;display:flex;flex-direction:column;flex:1}.movie-title{background:none;border:0;text-align:left;padding:0;font-weight:700;font-size:17px;color:#263238}.movie-meta{color:#67717a;font-size:13px;margin:8px 0}.movie-description{font-size:13px;line-height:1.5;color:#4e5963;flex:1}.card-bottom{border-top:1px solid #eee;padding-top:12px;display:flex;flex-direction:column;gap:12px}.star-label{font-size:12px;color:#67717a;display:block;margin-bottom:4px}.stars button,.detail-stars button{border:0;background:none;padding:1px;color:#c9cdd3;font-size:23px}.stars button.rated,.detail-stars button.rated{color:#f3b429}.detail-link{align-self:flex-start;font-size:13px}.empty-state{background:#fff;text-align:center;border-radius:8px;border:1px solid #ddd;padding:40px;margin-bottom:40px}.empty-emoji{font-size:40px}.primary-button,.modal-favorite{background:#225c99;color:#fff;border:0;border-radius:6px;padding:12px 16px}.modal-backdrop{position:fixed;inset:0;background:#0009;display:flex;justify-content:center;align-items:center;padding:18px;z-index:10}.detail-modal{width:min(750px,100%);max-height:90vh;overflow:auto;background:white;border-radius:9px;position:relative;display:grid;grid-template-columns:250px 1fr}.modal-close{position:absolute;right:12px;top:10px;background:white;border:1px solid #ddd;border-radius:50%;width:34px;height:34px;font-size:23px;z-index:2}.detail-poster{min-height:360px;background:#e7eaef}.detail-poster img{width:100%;height:100%;object-fit:cover}.detail-content{padding:28px}.detail-eyebrow{font-size:12px;color:#6d7780}.detail-content h2{font-size:26px;margin:10px 0}.detail-subline{color:#67717a;font-size:14px}.detail-score{color:#916500;font-weight:bold}.detail-score small{display:block;color:#667;font-size:12px;font-weight:normal}.detail-content h3{margin:20px 0 5px;font-size:16px}.detail-summary{font-size:14px;line-height:1.6;color:#48535f;margin-top:3px}.detail-stars span{display:block;color:#667;font-size:12px}.modal-favorite{margin-top:20px}.modal-favorite.is-favorite{background:#a93649}footer{text-align:center;padding:24px;color:#6d7780;border-top:1px solid #ddd;font-size:13px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:900px){.movie-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:650px){.movie-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.poster-container{height:215px}.filter-grid{grid-template-columns:1fr}.detail-modal{grid-template-columns:1fr}.detail-poster{height:220px;min-height:0}.detail-poster img{object-fit:contain}.section-heading{align-items:flex-start;flex-direction:column}.nav-actions span{display:none}.page-heading h1{font-size:26px}}@media(max-width:380px){.movie-grid{grid-template-columns:1fr}.poster-container{height:340px}}
+
+/* Toques de estilo: colores suaves y detalles discretos */
+:root { --accent:#5865ae; --accent-dark:#394883; }
+body { background: #f3f4fa; }
+.site-header { border-bottom: 2px solid #e8e9f7; }
+.brand { color:var(--accent-dark); letter-spacing:-.5px; }
+.page-heading { padding: 17px 0 2px; }
+.page-heading h1 { color:#29324e; }
+.page-heading h1::after { content:""; display:block; width:58px; height:4px; border-radius:4px; background:#929be0; margin-top:12px; }
+.search-section { border-color:#e1e4ee; box-shadow:0 3px 15px #28345b0a; border-radius:12px; }
+.search-wrap:focus-within { border-color:var(--accent); box-shadow:0 0 0 3px #5865ae18; }
+.filter-grid select { border-radius:8px; }
+.movie-card { border-color:#e3e5ef; border-radius:12px; transition:transform .16s ease, box-shadow .16s ease; }
+.movie-card:hover { transform:translateY(-3px); box-shadow:0 8px 22px #29324c19; }
+.movie-title:hover, .detail-link:hover { color:var(--accent); }
+.rating-badge { color:#745719; box-shadow:0 2px 8px #0002; }
+.heart-button { box-shadow:0 2px 8px #0002; }
+.detail-link, .favorites-shortcut, .reset-button, .nav-actions button { color:var(--accent-dark); border-color:#d8ddec; }
+.primary-button, .modal-favorite { background:var(--accent-dark); }
+.primary-button:hover, .modal-favorite:hover { background:#293766; }
+.detail-modal { border-radius:14px; }
+@media(prefers-reduced-motion:reduce){.movie-card{transition:none}.movie-card:hover{transform:none}}
+
+/* Ajustes finales: un toque visual sin complicar el diseño */
+.site-header { box-shadow:0 2px 12px rgba(43,54,107,.055); }
+.page-heading p { line-height:1.6; }
+.search-section { background:#fff; }
+.section-heading h2 { color:#303958; }
+.movie-card { box-shadow:0 2px 7px rgba(36,45,77,.045); }
+.poster-container { background:#e8e9f4; }
+.poster-click img { transition:transform .22s ease; }
+.movie-card:hover .poster-click img { transform:scale(1.025); }
+.heart-button:hover { background:#fff0f4; }
+.heart-button:focus-visible, .stars button:focus-visible { outline:2px solid #5865ae;outline-offset:1px; }
+.stars button:hover, .detail-stars button:hover { color:#e3a423; }
+.detail-link { font-weight:600; }
+.detail-link:hover, .reset-button:hover, .favorites-shortcut:hover { background:#f0f1fa; }
+footer { background:#fff; }
+@media(prefers-reduced-motion:reduce){.poster-click img{transition:none}.movie-card:hover .poster-click img{transform:none}}
